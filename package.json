@@ -1,0 +1,21 @@
+{
+  "name": "deviensfrancais-lot1",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Deviens Français·e — lot 1 : tests, scripts et registre de contenu (socle sûr et réversible).",
+  "scripts": {
+    "test": "node tests/run-all.mjs",
+    "test:node": "node tests/run-all.mjs --groupe node",
+    "test:navigateur": "node tests/run-all.mjs --groupe navigateur",
+    "test:serveur": "node tests/run-all.mjs --groupe serveur",
+    "test:site": "node tests/run-all.mjs --cible site",
+    "set-version": "node scripts/set-version.mjs",
+    "empreintes": "node scripts/empreintes.mjs",
+    "registre": "node scripts/build-registre.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.2",
+    "playwright": "1.63.0"
+  }
+}

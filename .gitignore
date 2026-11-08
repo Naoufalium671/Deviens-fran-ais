@@ -1,0 +1,3 @@
+# Dossiers recréés par les commandes npm : ne pas les suivre
+node_modules/
+tests/results/
